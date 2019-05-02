@@ -8,7 +8,7 @@ TARGET = $(BUILD_DIR)/project
 export MAINBASE := $(shell pwd)
 SRCBASE    := $(MAINBASE)/util
 STMSRCBASE := $(MAINBASE)/drivers/STM32L4xx_HAL_Driver/Src
-freeRTOS   := $(MAINBASE)/submodules/freertos
+freeRTOS   := $(MAINBASE)/submodules/freeRTOS
 unitTEST   := $(MAINBASE)/submodules/cpputest
 
 # Build path
