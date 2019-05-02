@@ -2,4 +2,6 @@
 Testing FreeRTOS on stm32 L432 microcontroller.
 
 
-https://img.shields.io/teamcity/http/github.com/s/TestStm32l432_Build.svg?style=flag
+<a href="http://teamcity/viewType.html?buildTypeId=TestStm32l432_Build&guest=1">
+<img src="http://team_city/app/rest/builds/buildType:(id:TestStm32l432_Build)/statusIcon"/>
+</a>
