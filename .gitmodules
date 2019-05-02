@@ -1,3 +1,6 @@
 [submodule "submodules/freeRTOS"]
 	path = submodules/freeRTOS
 	url = https://github.com/EserFromCambridge/freeRTOS.git
+[submodule "submodules/cpputest"]
+	path = submodules/cpputest
+	url = https://github.com/EserFromCambridge/cpputest.git
