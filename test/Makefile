@@ -110,7 +110,7 @@ COMPILER_OPTIONS = -std=c++11 -Wno-c++98-compat -Wc++11-compat -Wno-c++98-compat
 CPPUTEST_WARNINGFLAGS += -Wno-reserved-id-macro -Wno-keyword-macro -Wno-unused-parameter\
  -Wno-sign-conversion -Wno-header-hygiene -Wno-conversion -Wno-documentation -Wno-documentation-unknown-command\
  -Wno-return-type -Wno-unused-variable -Wno-covered-switch-default -Wno-unneeded-internal-declaration\
- -Wno-format-nonliteral -Wno-missing-prototypes -Wno-unreachable-code-return -Wno-shadow-field-in-constructor -Wno-c99-extensions\
+ -Wno-format-nonliteral -Wno-missing-prototypes -Wno-unreachable-code-return -Wno-global-constructors -Wno-c99-extensions\
  -Wno-unused-macros -Wno-nested-anon-types -Wno-c++14-binary-literal -Wno-missing-field-initializers -Wno-missing-braces\
  -Wno-missing-field-initializers
 
