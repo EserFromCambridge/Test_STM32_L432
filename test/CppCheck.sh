@@ -1,0 +1,2 @@
+cppcheck --enable=all --std=c++11 --std=c99 --xml --xml-version=2 ../application/ ../util/main.c 2> CppCheckResults/cppcheck_result.xml
+cppcheck-htmlreport --file=CppCheckResults/cppcheck_result.xml --title=Test_STM32_L432 --report-dir=CppCheckResults --source-dir=.

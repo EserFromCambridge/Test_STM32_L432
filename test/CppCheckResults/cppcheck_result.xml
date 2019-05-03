@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="1.87"/>
+    <errors>
+        <error id="unusedFunction" severity="style" msg="The function &apos;StartDefaultTask&apos; is never used." verbose="The function &apos;StartDefaultTask&apos; is never used." cwe="561">
+            <location file="../util/main.c" line="296"/>
+            <symbol>StartDefaultTask</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;assert_failed&apos; is never used." verbose="The function &apos;assert_failed&apos; is never used." cwe="561">
+            <location file="../util/main.c" line="332"/>
+            <symbol>assert_failed</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;logDataToQueue&apos; is never used." verbose="The function &apos;logDataToQueue&apos; is never used." cwe="561">
+            <location file="../application/trace.c" line="87"/>
+            <symbol>logDataToQueue</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;logMsgToQueue&apos; is never used." verbose="The function &apos;logMsgToQueue&apos; is never used." cwe="561">
+            <location file="../application/trace.c" line="56"/>
+            <symbol>logMsgToQueue</symbol>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;unittest_add&apos; is never used." verbose="The function &apos;unittest_add&apos; is never used." cwe="561">
+            <location file="../application/unittest_ex.cpp" line="10"/>
+            <symbol>unittest_add</symbol>
+        </error>
+        <error id="missingInclude" severity="information" msg="Cppcheck cannot find all the include files (use --check-config for details)" verbose="Cppcheck cannot find all the include files. Cppcheck can check the code without the include files found. But the results will probably be more accurate if all the include files are found. Please check your project&apos;s include directories and add all of them as include directories for Cppcheck. To see what files Cppcheck cannot find use --check-config."/>
+    </errors>
+</results>
