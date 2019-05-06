@@ -102,7 +102,7 @@ int main(void) {
 //		typedef void (*TaskFunction_t)( void * );
 		xTaskCreate((TaskFunction_t)Task1, "Send1", configMINIMAL_STACK_SIZE, (void*)NULL, tskIDLE_PRIORITY+3UL, NULL);
 
-		xTaskCreate((TaskFunction_t)Task2, "Send1", configMINIMAL_STACK_SIZE, (void*)NULL, tskIDLE_PRIORITY+3UL, NULL);
+		xTaskCreate((TaskFunction_t)Task2, "Send2", configMINIMAL_STACK_SIZE, (void*)NULL, tskIDLE_PRIORITY+3UL, NULL);
 
 		xTaskCreate((TaskFunction_t)Task0, "Receiver", configMINIMAL_STACK_SIZE, (void*)NULL, tskIDLE_PRIORITY+1UL, NULL);
 	} else {
@@ -116,11 +116,11 @@ int main(void) {
 
 void Task2(void) {
 	const TickType_t xDelay = pdMS_TO_TICKS(200);
-//	float v = 2.00;
+	float v = 2.00;
 //	int value2 = 3;
 	for(;;) {
-//		logMsgToQueue(TASK1, SCREEN, CRT, "It is a message from Task - 1 and value: %f", v);
-		TASK2_logMsgToQueue(SCREEN, WRN, "It is a message from Task -2");
+		TASK2_logMsgToQueue(TASK1, SCREEN, CRT, "It is a message from Task - 1 and value: %f", v);
+//		TASK2_logMsgToQueue(SCREEN, WRN, "It is a message from Task -2");
 		vTaskDelay(xDelay);
 	}
 	vTaskDelete(NULL);
